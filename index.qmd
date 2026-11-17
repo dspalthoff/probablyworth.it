@@ -1,0 +1,16 @@
+---
+title: "Probably Worth It"
+subtitle: "Notes on scale, risk and choices"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+  date-format: "D MMMM YYYY"
+  fields: [date, title, subtitle, categories]
+page-layout: full
+title-block-banner: false
+---
+
+Is it big? Is it worth it? Compared to what? The first posts are on their way.

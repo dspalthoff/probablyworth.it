@@ -1,0 +1,3 @@
+# Local preview with drafts visible: quarto preview --profile drafts
+website:
+  draft-mode: visible

@@ -1,0 +1,12 @@
+{
+  "hash": "c371ece39d55973979d4c0c8d155dfae",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Pipeline test\"\nsubtitle: \"Checks that Python charts, folded code and the Methods box work\"\ndate: 2026-11-17\ncategories: [notes]\ndraft: true\n---\n\nA test post. It is marked as a draft, so it never appears on the live site.\n\n::: {#cell-fig-test .cell execution_count=1}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\n\nfig, ax = plt.subplots(figsize=(7, 2.2))\nax.barh([\"Big\", \"Small\"], [1000, 1], color=[\"#1F1D1A\", \"#B23A26\"])\nfor s in [\"top\", \"right\"]:\n    ax.spines[s].set_visible(False)\nfig.patch.set_alpha(0)\nax.set_facecolor(\"none\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Two quantities 1,000 times apart. On a linear axis the small one vanishes.](index_files/figure-html/fig-test-output-1.png){#fig-test width=587 height=204}\n:::\n:::\n\n\n::: {.methods}\n## Methods & Sources\nIllustrative numbers only. Code: click \"Show the code\" under the chart.\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

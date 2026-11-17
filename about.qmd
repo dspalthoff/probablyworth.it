@@ -1,0 +1,12 @@
+---
+title: "About"
+---
+
+*Placeholder. The About page text is being written separately.*
+
+This blog asks one question: is it worth it, compared to what? Posts follow two strands:
+
+- **Drawn to scale:** big differences in quantities that are hard to grasp, mostly in public money, development, health and markets.
+- **Bets:** how people choose, size, test and quit bets on careers, money and time when the outcome is uncertain.
+
+Every post has a Methods & Sources box, and the code behind each chart is one click away.

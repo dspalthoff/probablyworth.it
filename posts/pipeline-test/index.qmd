@@ -1,0 +1,28 @@
+---
+title: "Pipeline test"
+subtitle: "Checks that Python charts, folded code and the Methods box work"
+date: 2026-11-17
+categories: [notes]
+draft: true
+---
+
+A test post. It is marked as a draft, so it never appears on the live site.
+
+```{python}
+#| label: fig-test
+#| fig-cap: "Two quantities 1,000 times apart. On a linear axis the small one vanishes."
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(figsize=(7, 2.2))
+ax.barh(["Big", "Small"], [1000, 1], color=["#1F1D1A", "#B23A26"])
+for s in ["top", "right"]:
+    ax.spines[s].set_visible(False)
+fig.patch.set_alpha(0)
+ax.set_facecolor("none")
+plt.show()
+```
+
+::: {.methods}
+## Methods & Sources
+Illustrative numbers only. Code: click "Show the code" under the chart.
+:::

@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - CNAME
+    - fonts/
+
+website:
+  title: "Probably Worth It"
+  description: "Notes on scale, risk and choices."
+  site-url: https://probablyworth.it
+  favicon: favicon.svg
+  open-graph: true
+  draft-mode: gone
+  navbar:
+    left:
+      - href: index.qmd
+        text: Posts
+      - href: about.qmd
+        text: About
+    right:
+      - icon: rss
+        href: index.xml
+        aria-label: RSS feed
+  page-footer:
+    left: "Probably Worth It · notes on scale, risk and choices"
+    right:
+      - text: Impressum
+        href: impressum.qmd
+      - text: Datenschutz
+        href: datenschutz.qmd
+
+format:
+  html:
+    theme: styles.scss
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: false
+    # Charts: show the visual, keep the code one click away
+    code-fold: true
+    code-summary: "Show the code"
+    code-tools:
+      source: false
+      toggle: true
+      caption: "Code"
+    code-copy: true
+    code-overflow: wrap
+    fig-align: left
+
+execute:
+  freeze: auto

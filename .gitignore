@@ -1,0 +1,17 @@
+/.quarto/
+/_site/
+.venv/
+__pycache__/
+.Rhistory
+.RData
+.Rproj.user/
+*_files/
+
+**/*.quarto_ipynb
+/index.html
+# preview output that can land in the project folder
+/*.html
+/site_libs/
+/index-listing.json
+/index.feed-full-staged
+posts/**/*.html

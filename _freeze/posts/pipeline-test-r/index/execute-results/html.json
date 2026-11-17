@@ -1,0 +1,17 @@
+{
+  "hash": "87b2b7f8af785d66210d13301548f09e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Pipeline test (R)\"\nsubtitle: \"Checks that R charts and folded code work\"\ndate: 2026-11-17\ncategories: [notes]\ndraft: true\n---\n\nA test post in R, marked as a draft.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nd <- data.frame(what = c(\"Big\", \"Small\"), value = c(1000, 1))\nggplot(d, aes(value, what, fill = what)) +\n  geom_col(width = 0.6) +\n  scale_x_log10(labels = scales::label_comma()) +\n  scale_fill_manual(values = c(Big = \"#1F1D1A\", Small = \"#B23A26\"), guide = \"none\") +\n  labs(x = NULL, y = NULL) +\n  theme_minimal(base_family = \"sans\") +\n  theme(plot.background = element_rect(fill = \"transparent\", colour = NA),\n        panel.grid.major.y = element_blank())\n```\n\n::: {.cell-output-display}\n![The same two quantities on a log scale: now the small one is visible.](index_files/figure-html/fig-test-r-1.png){#fig-test-r width=672}\n:::\n:::\n\n\n::: {.methods}\n## Methods & Sources\nIllustrative numbers only.\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

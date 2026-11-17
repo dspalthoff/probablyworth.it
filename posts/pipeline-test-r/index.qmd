@@ -1,0 +1,30 @@
+---
+title: "Pipeline test (R)"
+subtitle: "Checks that R charts and folded code work"
+date: 2026-11-17
+categories: [notes]
+draft: true
+---
+
+A test post in R, marked as a draft.
+
+```{r}
+#| label: fig-test-r
+#| fig-cap: "The same two quantities on a log scale: now the small one is visible."
+#| fig-height: 2
+library(ggplot2)
+d <- data.frame(what = c("Big", "Small"), value = c(1000, 1))
+ggplot(d, aes(value, what, fill = what)) +
+  geom_col(width = 0.6) +
+  scale_x_log10(labels = scales::label_comma()) +
+  scale_fill_manual(values = c(Big = "#1F1D1A", Small = "#B23A26"), guide = "none") +
+  labs(x = NULL, y = NULL) +
+  theme_minimal(base_family = "sans") +
+  theme(plot.background = element_rect(fill = "transparent", colour = NA),
+        panel.grid.major.y = element_blank())
+```
+
+::: {.methods}
+## Methods & Sources
+Illustrative numbers only.
+:::
